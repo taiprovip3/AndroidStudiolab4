@@ -9,11 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLab_0703">
-<!--        <activity-->
-<!--            android:name=".lab4.lab4b.MainActivity"-->
-<!--            android:exported="false"/>-->
         <activity
-            android:name=".lab4.lab4b.MainActivity"
+            android:name=".lab4.lab4a.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".lab4.lab4a.MainActivity"
+            android:name=".lab4.lab4b.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

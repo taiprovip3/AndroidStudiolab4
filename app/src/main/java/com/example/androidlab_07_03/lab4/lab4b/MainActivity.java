@@ -22,11 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         List<DayCap> dayCapList = new ArrayList<>();
-        dayCapList.add(new DayCap("dauchuyendoi","dauchuyendoi","69.999"));
-        dayCapList.add(new DayCap("dauchuyendoipsps2","dauchuyendoipsps2","69.999"));
-        dayCapList.add(new DayCap("daynguon", "daynguon", "69.999"));
-        dayCapList.add(new DayCap("giacchuyen", "giacchuyen", "69.999"));
-        final GridView gridView = findViewById(R.id.gridView);
+        dayCapList.add(new DayCap("dauchuyendoi","Đầu chuyển Đổi","69.999"));
+        dayCapList.add(new DayCap("dauchuyendoipsps2","Đầu chuyển Đổi IpSp2","69.999"));
+        dayCapList.add(new DayCap("daynguon", "Đây nguồn Chính hãng", "69.999"));
+        dayCapList.add(new DayCap("giacchuyen", "Giắc Chuyên Dụng", "69.999"));
+        final GridView gridView = (GridView) findViewById(R.id.gridView);
         gridView.setAdapter(new Adapater(this, dayCapList));
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

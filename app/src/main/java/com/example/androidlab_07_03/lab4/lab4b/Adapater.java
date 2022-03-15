@@ -51,8 +51,8 @@ public class Adapater extends BaseAdapter {
         txtPrice = (TextView) view.findViewById(R.id.capPrice);
 
         DayCap dc = this.dayCaps.get(i);
-        txtName.setText(dc.getNameCap());
-        txtPrice.setText(dc.getPriceCap());
+        txtName.setText(""+dc.getNameCap());
+        txtPrice.setText(""+dc.getPriceCap());
         String idImage = dc.getImageCap();
         switch (idImage){
             case "dauchuyendoi":

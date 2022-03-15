@@ -10,57 +10,63 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageCap"
-            android:layout_width="60dp"
-            android:layout_height="51dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/dauchuyendoi" />
+            android:layout_width="86dp"
+            android:layout_height="94dp"
+            app:srcCompat="@drawable/dauchuyendoi"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="4dp" />
 
         <TextView
             android:id="@+id/capName"
-            android:layout_width="185dp"
+            android:layout_width="244dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
             android:text="TextView"
             android:textColor="#000000"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageCap" />
+            app:layout_constraintStart_toEndOf="@+id/imageCap"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/txtSale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="1dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="4dp"
             android:text="-39%"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/capPrice"
-            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/capPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="12dp"
             android:text="TextView"
             android:textColor="#000000"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+            app:layout_constraintStart_toEndOf="@+id/imageCap"
+            app:layout_constraintTop_toBottomOf="@+id/capName" />
 
         <RatingBar
             android:id="@+id/ratingBar"
-            android:layout_width="match_parent"
-            android:layout_height="43dp"
+            android:layout_width="236dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:numStars="5"
             android:scaleX="0.5"
             android:scaleY="0.5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/capName" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageCap"
+            app:layout_constraintTop_toBottomOf="@+id/capPrice" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
